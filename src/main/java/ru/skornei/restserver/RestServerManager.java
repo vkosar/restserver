@@ -1,6 +1,6 @@
 package ru.skornei.restserver;
 
-import android.app.Application;
+import android.content.Context;
 
 public final class RestServerManager {
 
@@ -8,7 +8,7 @@ public final class RestServerManager {
         throw new RuntimeException();
     }
 
-    public static void initialize(Application application) {
-        Cache.initialize(application);
+    public static void initialize(Context context) {
+        Cache.initialize(context);
     }
 }
